@@ -9,13 +9,16 @@ on:
 
 permissions:
   contents: read
-  id-token: write
   security-events: write
 
 jobs:
   scorecard:
     name: Scorecard
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      security-events: write
     steps:
       - uses: actions/checkout@v6
         with:
