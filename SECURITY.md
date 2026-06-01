@@ -24,3 +24,14 @@ third-party systems.
 - Receipt evidence rejects secret-like field names.
 - MCP tool execution can fail closed in production unless upstream auth is configured.
 - The project does not sign payments, move funds, custody wallets, or claim marketplace endorsement.
+
+## Public Security Automation
+
+- Pytest runs on pushes and pull requests.
+- CodeQL scans Python code paths.
+- Dependabot watches GitHub Actions and Python packaging updates.
+- OpenSSF Scorecard records supply-chain hygiene signals.
+
+These checks are reviewer aids, not security certification. GateCheck's public
+claim remains limited to observed metadata, unpaid 402 behavior, sanitized
+receipts, and tested safety boundaries.
